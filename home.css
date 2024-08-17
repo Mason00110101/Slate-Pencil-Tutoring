@@ -1,0 +1,35 @@
+/* home.css */
+
+/* Main Services Grid Layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Each Service Item */
+.service-item img {
+  width: 80px; /* Set a consistent size for icons */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  color: #4b0082;
+  font-weight: bold;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
